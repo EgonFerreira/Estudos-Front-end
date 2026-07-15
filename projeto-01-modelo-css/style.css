@@ -1,0 +1,101 @@
+body{
+    font-family: Arial, sans-serif; /* definir o fonte padrão*/
+    background-color: rgb(246, 237, 237);
+    padding: 20px; /* adicionar preenchimento no conteudo*/
+    margin: 0; /* remover margin no BODY */
+}
+
+ .container{
+    background-color: #fff;
+    padding: 20px;
+    margin: auto;
+    width: 80%; /* definir a largura do container, como a largura de 80% da largura de uma janela*/
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1) /* definir uma sombra  ao redor do container*/
+}
+    h1{ 
+        color: #333; /* cor do texto*/
+        text-align: center; /* centralizar o texto*/
+}
+
+    p {
+        color: #666;
+        line-height: 1.6; /* difinir a altura da linha para melhor legibilidade*/
+        text-align: center;
+    }
+
+.box{
+    background-color: blue;   /* para adicionar cor no fundo*/
+    padding: 20px;   /*para adicionar preenchimento interno*/
+    margin: 20px 0; /* adicionar margim em cima e embaixo da caixa*/
+    border:2px solid #0056b3; /* definir a bordar de 2px ao redor da caixa*/ 
+    text-align: center; 
+    color:  #fff;
+    border-radius: 5px;
+}
+/* O Box Model é um conceito fundamental no design de páginas web que descreve como os elementos HTML são representados como caixas retangulares. 
+   Cada elemento em uma página web é uma "caixa", e o Box Model define as partes dessa caixa e como elas são medidas. */
+/*
++---------------------------+
+|        Margin             |
+|  +---------------------+  |
+|  |      Border         |  |
+|  |  +---------------+  |  |
+|  |  |    Padding    |  |  |
+|  |  |  +---------+  |  |  |
+|  |  |  | Content |  |  |  |
+|  |  |  +---------+  |  |  |
+|  |  +---------------+  |  |
+|  +---------------------+  |
++---------------------------+
+*/
+
+/*
+   Content: O que está dentro da caixa, como texto ou imagens.
+   Padding: Espaço entre o conteúdo e a borda da caixa.
+   Border: A linha ao redor do padding (ou conteúdo se não houver padding).
+   Margin: Espaço fora da borda, separando a caixa de outras caixas.   
+*/
+
+
+/* 
+content-box (padrão):
+Como é calculado:
+    A largura e a altura que você define são aplicadas APENAS ao conteúdo do elemento.
+    O padding e a borda são adicionados à largura e altura especificadas, aumentando o tamanho total do elemento.
+Exemplo:
+    Se você define uma largura de 200 pixels, adiciona 20 pixels de padding e 5 pixels de borda, o tamanho total da caixa será:
+    200 pixels (conteúdo) + 20 pixels (padding esquerdo) + 20 pixels (padding direito) + 5 pixels (borda esquerda) + 5 pixels (borda direita) = 250 pixels
+*/
+
+/* Estilizando a caixa com content-box (padrão) */
+/*.content-box {
+    box-sizing: content-box; /* Define box-sizing como content-box */
+/*
+
+/*
+border-box:
+Como é calculado:
+    A largura e a altura que você define INCLUEM o conteúdo, o padding e a borda.
+    Isso significa que o tamanho total do elemento não muda, independentemente do padding e da borda que você adicionar.
+
+Exemplo:
+    Se você define uma largura de 200 pixels e adiciona 20 pixels de padding e 5 pixels de borda, o tamanho total da caixa permanecerá:
+    200 pixels (largura total) = conteúdo + padding + borda
+*/
+
+.gradient-box{
+    width: 300px;  /*tamanho da box*/
+    padding: 20px;
+    margin: 20px auto;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.linear{
+background: linear-gradient(to right, #ff7e5f, #7be8fe);
+ }
+
+ .radial{
+background: radial-gradient( #ff7e5f, #7be8fe);
+ }
